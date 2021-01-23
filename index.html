@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Sample App </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/app.js"></script>
+</head>
+<body>
+        <div id="container">
+           
+            <h1>E-Commerce Checkout</h1>
+
+            <div id="heading-area" class="grid grid-col-4">
+
+                <h2>Product</h2>
+                <h2>Quantity</h2>
+                <h2>Unit Price</h2>
+                <h2>Extended Price</h2>
+            </div>
+
+            <div id="product-rows-area">
+
+                <div id="firstRow" class="grid grid-col-4">
+                    <span>Pants</span>
+                    <div>
+                        <button type="button" class="btn dButton">-</button>
+                         <span class="qty">1</span>
+                        <button type="button" class="btn iButton">+</button>
+                    </div>
+                    <span class="unitPrice">$40.99</span>
+                    <span class="extendedPrice">$40.99</span>
+                </div>
+    
+                <div id="secondRow" class="grid grid-col-4">
+                    <span>Shirts</span>
+                    <div>
+                        <button type="button" class="btn dButton">-</button>
+                         <span class="qty">1</span>
+                        <button type="button" class="btn iButton">+</button>
+                    </div>
+                    <span class="unitPrice">$10.99</span>
+                    <span class="extendedPrice">$10.99</span>
+                </div>
+
+                <button class="btn" type="button" id="calculateButton">Calculate</button>
+            </div>
+
+            <div id="bill-area" class = "hide">
+
+                <p>
+                    Sub Total : <span id="subTotal"></span>      
+                </p>
+                <p>
+                    Tax : <span id="tax"></span>    
+                </p>
+                <p>
+                    Total: <span id="total"></span>  
+                </p>
+
+                <p>
+                    Have a promo Code <button class="btn" type="button">Click to Enter</button>
+                </p>
+
+            </div>
+
+            <div id="promo-code-area" class = "hide">
+               
+                <form>
+                    <label for="promoCode">PROMO CODE</label>
+                    <input type="text" id="promoCode">
+                    <button class="btn" type="button">Enter Code</button>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
